@@ -1,0 +1,11 @@
+body {
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover; /* La imagen se ajustará y recortará para cubrir el cuerpo */
+    background-attachment: fixed; /* La imagen se mantiene en su posición mientras se desplaza la página */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center;
+}
+.navbar a.nav-link {
+    font-weight: bold;
+    color: #000; /* Cambia el color del texto a negro para que sea más negrito */
+}
