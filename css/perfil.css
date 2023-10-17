@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+.profile-cover {
+    background-image: url('/img/fondo2.jpg'); /* Imagen de portada */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px; /* Ajusta la altura según tus preferencias */
+    display: flex;
+    flex-direction: column; /* Cambio a dirección de columna */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.profile-info {
+    position: relative;
+    margin-top: 20px; /* Espacio entre la foto de perfil y el nombre */
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+main {
+    padding: 20px;
+}
+
+.post {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Consulta de medios para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .profile-cover {
+        height: 200px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+
+    .profile-picture {
+        width: 100px; /* Ajusta el tamaño de la foto de perfil */
+        height: 100px;
+    }
+}
