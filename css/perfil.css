@@ -1,4 +1,3 @@
-
 .profile-image {
     max-width: 100%;
     height: auto;
@@ -13,4 +12,18 @@
 }
 .animate-zoom {
     animation: zoomIn 1s;
+}
+.image-container {
+    transition: transform 0.3s;
+}
+
+/* Cuando el mouse pasa por encima, aplica una ligera rotación */
+.image-container:hover {
+    transform: rotate(5deg);
+}
+
+/* Ajusta el tamaño de las imágenes */
+.tech-image {
+    width: 100px;
+    height: 100px;
 }
