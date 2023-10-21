@@ -11,7 +11,28 @@
    
 </head>
 <body class="bg-gray-900 text-white font-mono">
-
+    <nav class="bg-gray-800 p-4">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div class="md:hidden"> <!-- Elemento visible solo en dispositivos móviles -->
+                <button id="menu-button" class="text-white hover:text-blue-500 text-lg md:text-xl font-bold">
+                    Menú
+                </button>
+                <!-- Contenedor de enlaces del menú desplegable (inicialmente oculto) -->
+                <div id="mobile-menu" class="hidden">
+                    <a href="#biografia" class="text-white hover:text-blue-500 text-lg md:text-xl font-bold block py-2">Biografía</a>
+                    <a href="#tecnologias" class="text-white hover:text-blue-500 text-lg md:text-xl font-bold block py-2">Tecnologías</a>
+                    <a href="#bases-de-datos" class="text-white hover:text-blue-500 text-lg md:text-xl font-bold block py-2">Bases de Datos</a>
+                    <a href="#proyectos" class="text-white hover:text-blue-500 text-lg md:text-xl font-bold block py-2">Proyectos</a>
+                    <a href="#cursos" class="text-white hover:text-blue-500 text-lg md:text-xl font-bold block py-2">Cursos</a>
+                </div>
+            </div>
+            <a href="#biografia" class="text-white hover:text-blue-500 text-lg md:text-xl font-bold">Biografía</a>
+            <a href="#tecnologias" class="text-white hover:text-blue-500 text-lg md:text-xl font-bold">Tecnologías</a>
+            <a href="#bases-de-datos" class="text-white hover:text-blue-500 text-lg md:text-xl font-bold">Bases de Datos</a>
+            <a href="#proyectos" class="text-white hover:text-blue-500 text-lg md:text-xl font-bold">Proyectos</a>
+            <a href="#cursos" class="text-white hover:text-blue-500 text-lg md:text-xl font-bold">Cursos</a>
+        </div>
+    </nav>
     <header class="py-6 md:py-10">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-0">
             <div class="flex items-center mb-4 md:mb-0"> <!-- Agregamos margen inferior para dispositivos pequeños -->
@@ -132,7 +153,7 @@
                     <p class="text-white mt-2">MySQL</p>
                 </div>
                 <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
-                    <img src="/img/mongodb.png" alt="MongoDB" class="tech-image">
+                    <img src="/img/mongodb.svg" alt="MongoDB" class="tech-image">
                     <p class="text-white mt-2">MongoDB</p>
                 </div>
                 
