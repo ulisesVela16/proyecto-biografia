@@ -17,9 +17,9 @@
     transition: transform 0.3s;
 }
 
-/* Cuando el mouse pasa por encima, aplica una ligera rotación */
+/* Cambia la regla de animación para el efecto de zoom */
 .image-container:hover {
-    transform: rotate(5deg);
+    transform: scale(1.1);
 }
 
 /* Ajusta el tamaño de las imágenes */

@@ -14,10 +14,10 @@
 
     <header class="py-6 md:py-10">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-0">
-            <div class="flex items-center">
+            <div class="flex items-center mb-4 md:mb-0"> <!-- Agregamos margen inferior para dispositivos pequeños -->
                 <img class="w-32 h-32 md:w-48 md:h-48 rounded-full border-2 border-white object-contain animate-zoom cursor-pointer" src="/img/perfil.jpg" alt="Mi Foto de Perfil">
             </div>
-            <div class="text-center md:text-left mt-4 md:mt-0">
+            <div class="text-center md:text-left">
                 <h1 class="text-xl md:text-4xl font-bold mb-2">Ulises Uriel Velazquez Velazquez</h1>
                 <!-- Datos personales -->
                 <p class="text-lg md:text-xl text-left">Nacionalidad: Mexicana</p>
@@ -25,26 +25,27 @@
                 <p class="text-lg md:text-xl text-left">Estado: Zacatecas</p>
                 <p class="text-lg md:text-xl text-left">Idiomas: Español, Inglés</p>
                 <!-- Iconos de redes sociales en una fila horizontal -->
-                <div class="mb-4 flex">
-                    <a href="https://www.facebook.com/tucuenta" class="text-white text-2xl md:mr-2">
+                <div class="mb-4 flex items-center"> <!-- Agregamos margen inferior y alineamos los elementos verticalmente -->
+                    <a href="https://www.facebook.com/tucuenta" class="text-white text-3xl md:mr-2">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="https://github.com/tucuenta" class="text-white text-2xl md:mr-2">
+                    <a href="https://github.com/tucuenta" class="text-white text-3xl md:mr-2">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/tucuenta" class="text-white text-2xl md:mr-2">
+                    <a href="https://www.linkedin.com/in/tucuenta" class="text-white text-3xl md:mr-2">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="mailto:correo@tucorreo.com" class="text-white text-2xl md:mr-2">
+                    <a href="mailto:correo@tucorreo.com" class="text-white text-3xl md:mr-2">
                         <i class="far fa-envelope"></i>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=123456789" class="text-white text-2xl md:mr-2">
+                    <a href="https://api.whatsapp.com/send?phone=123456789" class="text-white text-3xl md:mr-2">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
+                
                 <!-- Botón de descarga centrado y más pequeño -->
                 <div class="text-center">
-                    <a href="/ruta/a/tu/curriculum.pdf" class="text-white bg-blue-500 py-1 px-2 rounded-full hover:bg-blue-600 text-xl block mx-auto">
+                    <a href="/files/herramientas.pdf" id="descargarBtn" class="text-white bg-blue-500 py-1 px-2 rounded-full hover:bg-blue-600 text-xl block mx-auto">
                         Descargar Currículum
                     </a>
                 </div>
@@ -56,59 +57,57 @@
     
     
     
-    <section class="bg-gray-800 py-8">
+    
+    <section class="bg-gray-800 py-8 section-style">
         <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl text-white font-bold mb-4">Biografia</h2>
             <p class="text-lg md:text-xl text-white font-bold mb-4">Soy un apasionado desarrollador web con experiencia en una variedad de 
                 tecnologías y lenguajes de programación. Me encanta crear aplicaciones web y contribuir a proyectos emocionantes. Lorem 
                 ipsum dolor sit amet consectetur adipisicing elit. Ea molestias dolore sit vero accusantium porro, nam architecto tenetur,
-                 voluptate natus odio modi a illo recusandae, fugit iure sed fuga nostrum? Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Voluptate et, fugiat consequatur assumenda numquam consequuntur voluptatibus nulla adipisci qui ab quae alias corporis
-                   quasi labore similique voluptates! Molestiae, animi veritatis! Quidem eum illum maiores facilis ullam ipsum saepe. In 
-                   sapiente dignissimos, deserunt iste error est neque tenetur, eveniet officiis earum inventore quas exercitationem 
-                   explicabo esse rem natus necessitatibus aut odio? Delectus, doloremque inventore dolorem quam accusamus quos est ipsa ut, 
-                   id, nihil similique aperiam distinctio saepe et laboriosam facilis perferendis excepturi eaque adipisci dignissimos 
-                   exercitationem. Ducimus commodi nostrum numquam nesciunt. Odio voluptatum tempora qui veritatis tempore pariatur velit
-                    saepe id dolores officia sit quos non laboriosam iste reprehenderit nemo, repudiandae amet distinctio! Sequi aperiam
-                     temporibus, distinctio placeat magni iusto voluptate? Modi quos doloremque earum at dicta, ad, ex vel rerum eius quo 
-                     cum! Tempora tempore accusamus dolores ipsam porro perferendis minima eum quam, odit, illum, reiciendis distinctio ea 
-                     rem itaque.</p>
-                     <h2 class="text-2xl md:text-3xl text-white font-bold mb-4">Tecnologías y Lenguajes de Programación</h2>
-                     <div class="flex flex-wrap justify-center">
-                         <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
-                             <img src="/img/html.svg" alt="HTML" class="tech-image">
-                             <p class="text-white mt-2">HTML</p>
-                         </div>
-                         <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
-                             <img src="/img/css.svg" alt="CSS" class="tech-image">
-                             <p class="text-white mt-2">CSS</p>
-                         </div>
-                         <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
-                             <img src="/img/js.svg" alt="JavaScript" class="tech-image">
-                             <p class="text-white mt-2">JavaScript</p>
-                         </div>
-                         <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
-                             <img src="/img/node-js.svg" alt="Node.js" class="tech-image">
-                             <p class="text-white mt-2">Node.js</p>
-                         </div>
-                         <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
-                             <img src="/img/php.svg" alt="Php" class="tech-image">
-                             <p class="text-white mt-2">Php</p>
-                         </div>
-                         <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
-                             <img src="/img/bootstrap-xx.svg" alt="Bootstrap" class="tech-image">
-                             <p class="text-white mt-2">Bootstrap</p>
-                         </div>
-                         <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
-                             <img src="/img/tailwindcss2.svg" alt="tailwind css" class="tech-image">
-                             <p class="text-white mt-2">Tailwind css</p>
-                         </div>
-                     </div>
+                voluptate natus odio modi a illo recusandae, fugit iure sed fuga nostrum?. </p>
+        </div>
+    </section>
+    
+    <section class="bg-gray-800 py-8 section-style">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl text-white font-bold mb-4">Tecnologías y Lenguajes de Programación</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
+                    <img src="/img/html.svg" alt="HTML" class="tech-image">
+                    <p class="text-white mt-2">HTML</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
+                    <img src="/img/css.svg" alt="CSS" class="tech-image">
+                    <p class="text-white mt-2">CSS</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
+                    <img src="/img/js.svg" alt="JavaScript" class="tech-image">
+                    <p class="text-white mt-2">JavaScript</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
+                    <img src="/img/node-js.svg" alt="Node.js" class="tech-image">
+                    <p class="text-white mt-2">Node.js</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
+                    <img src="/img/php.svg" alt="Php" class="tech-image">
+                    <p class="text-white mt-2">Php</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
+                    <img src="/img/bootstrap-xx.svg" alt="Bootstrap" class="tech-image">
+                    <p class="text-white mt-2">Bootstrap</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 p-4 flex flex-col items-center image-container">
+                    <img src="/img/tailwindcss2.svg" alt="tailwind css" class="tech-image">
+                    <p class="text-white mt-2">Tailwind css</p>
+                </div>
+            </div>
         </div>
     </section>
     
     
     
-    <section class="bg-gray-800 py-8">
+    
+    <section class="bg-gray-800 py-8 section-style">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-2xl md:text-3xl text-white font-bold mb-4">Bases de Datos</h2>
             <div class="flex flex-wrap justify-center">
@@ -124,31 +123,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-gray-800 py-8">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-2xl md:text-3xl text-white font-bold mb-4">Proyectos</h2>
-            <div class="flex flex-wrap justify-center">
-                <div class="w-1/2 md:w-1/4 p-4">
-                    <a href="URL_DEL_PROYECTO_1" target="_blank">
-                        <img src="/img/proyecto1.png" alt="Proyecto 1">
-                    </a>
-                    <p class="text-white mt-2"><a href="URL_DEL_PROYECTO_1" target="_blank">Nombre del Proyecto 1</a></p>
-                </div>
-                <div class="w-1/2 md:w-1/4 p-4">
-                    <a href="URL_DEL_PROYECTO_2" target="_blank">
-                        <img src="/img/proyecto2.png" alt="Proyecto 2">
-                    </a>
-                    <p class="text-white mt-2"><a href="URL_DEL_PROYECTO_2" target="_blank">Nombre del Proyecto 2</a></p>
-                </div>
-                <div class="w-1/2 md:w-1/4 p-4">
-                    <a href="URL_DEL_PROYECTO_3" target="_blank">
-                        <img src="/img/proyecto3.png" alt="Proyecto 3">
-                    </a>
-                    <p class="text-white mt-2"><a href="URL_DEL_PROYECTO_3" target="_blank">Nombre del Proyecto 3</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+   
     
 </body>
 </html>
